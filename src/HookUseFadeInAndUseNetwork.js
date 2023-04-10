@@ -39,10 +39,9 @@ export default HookUseFadeIn
 
 const useNetwork = (onChange) => {
     const [status, setStatus] = useState(navigator.onLine)
-
     const handleChange = () => {
-        if (typeof onChange === "function") {
-            onChange(navigator.onLine)
+        if (typeof onChange !== "function") {
+            return
         }
         setStatus(navigator.onLine)
     }
