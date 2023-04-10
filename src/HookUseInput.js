@@ -32,7 +32,7 @@ const HookUseInput = () => {
         <div className="HookUseInput">
             <h1>HookUseInput</h1>
             <input placeholder="Name" {...name} />
-            {/* {...name} == vale={name.value} onChange={onChange.value} */}
+            {/* {...name} == vale={name.value} onChange={name.onChange} */}
         </div>
     );
 };
