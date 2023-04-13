@@ -21,8 +21,11 @@ import ReactDOM from "react-dom/client";
 
 // import HookUseFadeIn, { HookUseNetwork } from './HookUseFadeInAndUseNetwork.js';
 
-import HookUseScroll, { HookUseFullscreen } from './HookUseScrollAndUseFullscreen.js';
+// import HookUseScroll, { HookUseFullscreen } from "./HookUseScrollAndUseFullscreen.js";
 
+// import HookUseNotification from "./HookUseNotification.js";
+
+import HookUseAxios from "./HookUseAxios.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -46,8 +49,11 @@ root.render(
 
     {/* <HookUseBeforeLeave /> */}
 
-    <HookUseScroll />
-    <HookUseFullscreen />
+    {/* <HookUseScroll />
+    <HookUseFullscreen /> */}
 
+    {/* <HookUseNotification /> */}
+
+    <HookUseAxios />
   </div>
 );
